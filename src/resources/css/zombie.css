@@ -1,0 +1,52 @@
+#scoreTitle {
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 36;
+    -fx-text-fill: white;
+}
+
+#scoreValue {
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 36;
+    -fx-text-fill: white;
+}
+
+#dangerTitle {
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 36;
+    -fx-text-fill: red;
+}
+
+#dangerCountdown {
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 36;
+    -fx-text-fill: red;
+}
+
+#dangerWarning {
+	-fx-background-color: yellow;
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+    -fx-padding: 2 16;
+    -fx--border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 4;
+}
+
+#gameOver {
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 48;
+    -fx-text-fill: red;
+}
+
+#newGame {
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 24;
+    -fx-text-fill: red;
+}
+
+#help {
+    -fx-font-family: 'Zombie';
+    -fx-font-size: 24;
+    -fx-text-fill: white;
+}
