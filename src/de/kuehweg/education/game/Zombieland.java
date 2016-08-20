@@ -38,7 +38,7 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Cursor;
+import javafx.scene.ImageCursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -144,11 +144,17 @@ public class Zombieland extends Application {
 				BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
 		final Rectangle2D size = calculateSize(background);
 		final Scene scene = new Scene(root, size.getWidth(), size.getHeight());
-		scene.setCursor(Cursor.CROSSHAIR);
 		root.setBackground(new Background(background));
 		root.getStylesheets().add(getClass().getResource("/resources/css/zombie.css").toExternalForm());
 		createScoreDisplay();
+		scene.setCursor(createImageCursor());
 		return scene;
+	}
+
+	private ImageCursor createImageCursor() {
+		final Image imageForCursor = new Image(
+				getClass().getResourceAsStream("/resources/images/image_cursor_large.png"));
+		return new ImageCursor(imageForCursor);
 	}
 
 	private void createScoreDisplay() {
